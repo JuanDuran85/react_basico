@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
+import {AddCategory} from './components/AddCategory';
+import {GifGrid} from './components/GifGrid';
 
 const GifExpertApp = () => {
-    
-    //const categorias = ['Risas', 'Homero', 'No'];
 
-    const [categories, setCategories] = useState(['Risas', 'Homero', 'No']);
+    const [categories, setCategories] = useState(['Homero']);
 
-    const agregarValue = () => {
-        // setCategories([...categories, 'nuevo elemento']);
+/*     const agregarValue = () => {
+        setCategories([...categories, 'nuevo elemento']);
         setCategories(categories => [...categories, 'nuevo Elemento']);
-    }
+    } */
 
     return (
         <div>
             <h1>Gif Experct App</h1>
+            <AddCategory setCategories={setCategories}/>
             <hr />
-
-            <button onClick={agregarValue}>Agregar</button>
-
             <ol>
                 {
-                    categories.map(category => {
-                        return <li key={category}>{category}</li>
-                    })
+                    categories.map(category => (
+                        <GifGrid 
+                            key={category}
+                            categoria={category}
+                        />
+                    ))
                 }
             </ol>
         </div>
