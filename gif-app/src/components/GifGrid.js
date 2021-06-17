@@ -1,37 +1,31 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useFetchGif } from '../hooks/useFetchGif';
 import { GifGridItem } from './GifGridItem';
+// import { getGifs } from '../helpers/getGifs';
 
 export const GifGrid = ({categoria}) => {
 
-    const [images, setImages] = useState([]);
+    const { data: images, loading } = useFetchGif(categoria);
+
+/*     const [images, setImages] = useState([]);
 
     useEffect(()=>{
-        getGifs();
-    },[])
-
-    const getGifs = async () => {
-        const url = "https://api.giphy.com/v1/gifs/search?q=Homero&limit=10&api_key=JKJeb3Vwarxcy3pWRoiFYKOgFFjz7epq";
-        const result = await fetch(url);
-        const {data} = await result.json();
-        const gifs = data.map((img)=>{
-            return {
-                id: img.id,
-                title: img.title,
-                url: img.images?.downsized_medium.url,
-            }
-        });
-
-        setImages(gifs);
-    };
+        getGifs(categoria)
+            .then(setImages)
+            .catch(error => console.error(error));
+    },[categoria]); */
 
     return (
-        <div>
-            <h1>{categoria}</h1>
-            {
-                images.map((img) => (
-                    <GifGridItem key={img.id} {...img}/>
-                ))
-            }
-        </div>
+        <>
+            <h1 className="animate__animated animate__flash">{categoria}</h1>
+            { loading && 'Cargando...'}
+            <div className="cardGrid">
+                {
+                    images.map((img) => (
+                        <GifGridItem key={img.id} {...img}/>
+                    ))
+                }
+            </div>
+        </>
     );
 }
