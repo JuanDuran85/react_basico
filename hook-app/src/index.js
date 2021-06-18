@@ -8,10 +8,12 @@ import ReactDOM from 'react-dom';
 // import { FocusScreen } from "./components/useRef/FocusScreen";
 // import { RealExampleRef } from "./components/useRef/RealExampleRef";
 //import { Layout } from "./components/useLayoutEffect/Layout";
-import { Momorize } from "./components/momos/Momorize";
+// import { Momorize } from "./components/momos/Momorize";
+// import { MemoHook } from "./components/momos/MemoHook";
+import { CallbackHook } from "./components/momos/CallbackHook";
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
-  <Momorize />,
+  <CallbackHook />,
   document.getElementById('root')
 );
