@@ -10,10 +10,15 @@ import ReactDOM from 'react-dom';
 //import { Layout } from "./components/useLayoutEffect/Layout";
 // import { Momorize } from "./components/momos/Momorize";
 // import { MemoHook } from "./components/momos/MemoHook";
-import { CallbackHook } from "./components/momos/CallbackHook";
+// import { CallbackHook } from "./components/momos/CallbackHook";
+// import { Padre } from "./components/momos/Padre";
+// import { TodoApp } from "./components/useReducer/TodoApp";
+import { MainApp } from "./components/useContext/MainApp";
+
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle';
 
 ReactDOM.render(
-  <CallbackHook />,
+  <MainApp />,
   document.getElementById('root')
 );

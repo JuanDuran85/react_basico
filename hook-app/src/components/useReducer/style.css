@@ -1,0 +1,22 @@
+body {
+    padding: 60px;
+}
+
+p {
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.list-group-item {
+    align-content: center;
+    align-items: center;
+    display: flex !important;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: aquamarine;
+}
