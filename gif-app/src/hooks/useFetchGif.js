@@ -15,7 +15,7 @@ export const useFetchGif = (categoria) => {
                         data: img,
                         loading: false
                     });
-                }, 3000);
+                }, 500);
             })
             .catch(error => console.error(error));
     },[categoria]);

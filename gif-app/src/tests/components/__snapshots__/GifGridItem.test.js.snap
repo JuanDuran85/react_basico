@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruenas en GifGridItem pruebas basica 1 1`] = `
+<div
+  className="card animate__animated animate__swing"
+>
+  <img
+    alt={1}
+    src="https://loquesea.com/loquesea.jpg"
+    title="nueva imagen"
+  />
+  <p>
+    nueva imagen
+  </p>
+</div>
+`;

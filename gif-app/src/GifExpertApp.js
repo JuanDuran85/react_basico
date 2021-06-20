@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import {AddCategory} from './components/AddCategory';
 import {GifGrid} from './components/GifGrid';
 
-const GifExpertApp = () => {
+const GifExpertApp = ({ defaultCategory = [] }) => {
 
-    const [categories, setCategories] = useState(['Homero']);
+    const [categories, setCategories] = useState(defaultCategory);
 
 /*     const agregarValue = () => {
         setCategories([...categories, 'nuevo elemento']);
@@ -32,4 +32,4 @@ const GifExpertApp = () => {
 
 // GifExpertApp.propTypes = {}
 
-export default GifExpertApp
+export default GifExpertApp;

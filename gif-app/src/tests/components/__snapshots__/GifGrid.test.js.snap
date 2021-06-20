@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba al componente GifGrid debe de mostrar item 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__flash"
+  >
+    Homero
+  </h1>
+  <div
+    className="cardGrid"
+  >
+    <GifGridItem
+      id={1234}
+      key="1234"
+      title="Homero en Imagen"
+      url="https://img.com/img-jpg"
+    />
+    <GifGridItem
+      id={8765}
+      key="8765"
+      title="Risas"
+      url="https://img.com/risas.jpg"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Prueba al componente GifGrid prueba uno 1`] = `
+<Fragment>
+  <h1
+    className="animate__animated animate__flash"
+  >
+    Homero
+  </h1>
+  Cargando...
+  <div
+    className="cardGrid"
+  />
+</Fragment>
+`;

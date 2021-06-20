@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { useFetchGif } from '../hooks/useFetchGif';
 import { GifGridItem } from './GifGridItem';
+import PropTypes from 'prop-types';
 // import { getGifs } from '../helpers/getGifs';
 
 export const GifGrid = ({categoria}) => {
@@ -28,4 +29,8 @@ export const GifGrid = ({categoria}) => {
             </div>
         </>
     );
-}
+};
+
+GifGrid.prototype = {
+    categoria: PropTypes.string.isRequired,
+};
