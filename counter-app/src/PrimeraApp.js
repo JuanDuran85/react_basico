@@ -8,7 +8,7 @@ const PrimeraApp = ({ saludo, subtitulo }) => {
     
     return (
         <>
-            <h1>React Nuevo con {saludo}</h1>
+            <h1>React Nuevo con {saludo}!!!</h1>
             <p>Nuevo parrafo con { subtitulo }</p>
         </>
     );
