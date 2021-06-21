@@ -15,5 +15,5 @@ export const HeroeCard = ({id,superhero,publisher,alter_ego,first_appearance}) =
             </div>
             </div>
         </div>
-    )
-}
+    );
+};
