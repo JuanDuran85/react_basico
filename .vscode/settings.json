@@ -1,6 +1,9 @@
 {
     "editor.fontSize": 16,
     "cSpell.ignoreWords": [
-        "heroe"
+        "existe",
+        "heroe",
+        "regresar",
+        "termino"
     ]
 }
