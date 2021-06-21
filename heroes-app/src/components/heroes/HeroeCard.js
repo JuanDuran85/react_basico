@@ -1,11 +1,12 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import { heroeImg } from '../../helpers/heroeImgage';
 
 export const HeroeCard = ({id,superhero,publisher,alter_ego,first_appearance}) => {
     return (
         <div className="col animate__animated animate__wobble">
             <div className="card" >
-            <img src={`./assets/heroes/${id}.jpg`} className="card-img-top" alt={id} />
+            <img src={heroeImg(`./${id}.jpg`).default} className="card-img-top" alt={id} />
             <div className="card-body">
                 <h5 className="card-title">{superhero}</h5>
                 <p className="card-text">{alter_ego}</p>

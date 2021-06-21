@@ -1,6 +1,9 @@
 import React, { useMemo } from 'react';
 import { useParams, Redirect } from 'react-router-dom';
+import { heroeImg } from '../../helpers/heroeImgage';
 import { getHeroesById } from '../../selectors/getHeroesById';
+
+//import batman from '../../assets/heroes';
 
 export const HeroScreen = ({history}) => {
 
@@ -23,7 +26,7 @@ export const HeroScreen = ({history}) => {
 
     return (
         <div className="card mt-5 animate__animated animate__backInUp">
-            <img src={`/assets/heroes/${heroeId}.jpg`} className="card-img-top" alt={heroeId} />
+            <img src={heroeImg(`./${heroeId}.jpg`).default} className="card-img-top" alt={heroeId} />
             <div className="card-body">
                 <h5 className="card-title">{alter_ego}</h5>
                 <p className="card-text">Publisher {publisher}</p>
