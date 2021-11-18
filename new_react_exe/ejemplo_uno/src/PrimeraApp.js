@@ -1,8 +1,9 @@
 /* Funtional components */
 
 import React from 'react';
+import { PropTypes } from 'prop-types';
 
-const PrimeraApp = () => {
+const PrimeraApp = ({mensaje, otroMensaje}) => {
 
     const saludo = 'Nuevo saludo desde variable';
     const objetoPersona = {
@@ -22,8 +23,21 @@ const PrimeraApp = () => {
             <p>{saludo}</p>
             <pre>{JSON.stringify(objetoPersona, null, 3)}</pre>
             <p>{objetoPersona.nombre}</p>
+            <p>{objetoPersona.apellido}</p>
+            <p>{objetoPersona.edad}</p>
+            <p>{mensaje}</p>
+            <p>{otroMensaje}</p>
         </>
     );
+}
+
+PrimeraApp.propTypes = {
+    mensaje: PropTypes.string.isRequired
+}
+
+PrimeraApp.defaultProps = {
+    mensaje: 'Este es el mensaje por defecto',
+    otroMensaje: 'Este es el mensaje por defecto'
 }
 
 export default PrimeraApp;
