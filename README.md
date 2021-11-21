@@ -48,3 +48,18 @@ Ejercicios bàsicos de React.
     ```
     npm install --save-dev enzyme-to-json
     ```
+
+4. Servidor local con NodeJS
+   ```
+   npm install --global http-server
+   ```
+   ```
+   http-server -o
+   ```
+5. Servidor local
+   ```
+   npm install -g serve
+   ```
+   ```
+   serve -s
+   ```
