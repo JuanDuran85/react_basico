@@ -1,0 +1,38 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 60px;
+  background: #fafafa;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  color: rgb(51, 18, 235);
+  font-size: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  font-size: 20px;
+  color: rgb(51, 18, 235);
+  text-align: center;
+}
