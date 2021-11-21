@@ -6,10 +6,6 @@ export const Gifexpertapp = () => {
 
     const [categories, setcategories] = useState(['Homero']);
 
- /*    const handleAdd = () => {
-        setcategories([...categories, 'Nueva categoria']);
-    } */
-
     return (
         <>
             <h1>GifExpertApp</h1>
