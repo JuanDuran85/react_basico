@@ -1,0 +1,23 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 60px;
+  background: #fafafa;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  color: rgb(51, 18, 235);
+  font-size: 20px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
