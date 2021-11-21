@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test general Debe mostrar la palabra Counter App con enzyme 1`] = `
+exports[`Test general texto plano Debe mostrar la palabra Counter App con Enzyme 1`] = `
 <Fragment>
   <h1>
     Counter App
